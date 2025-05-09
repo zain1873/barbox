@@ -104,7 +104,13 @@
   }
   .cta-area button {
     width: 200px;
-}
+  }
+  .banner-text {
+    padding: 20px;
+  }
+  .cta-area {
+    padding: 35px;
+  }
 
   }
   

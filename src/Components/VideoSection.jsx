@@ -17,7 +17,7 @@ function VideoSection() {
           {/*embedded youtube video */}
           <div className=" mt-5">
             <iframe
-              width="900"
+              width=""
               height="500"
               src="https://www.youtube.com/embed/FZsEKt2zbw4?si=CchnyQe0PtPR5dqU"
               title="YouTube video player"

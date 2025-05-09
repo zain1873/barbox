@@ -14,10 +14,11 @@ function ChatUs() {
           </p>
           <button className="theme_btn">Chat With Us Now</button>
 
-          <div class="bottom_chat_img">
+         
+        </div>
+        <div class="bottom_chat_img">
             <img className="obj_fit" src={chatImg} alt="" />
           </div>
-        </div>
       </div>
     </section>
   );
