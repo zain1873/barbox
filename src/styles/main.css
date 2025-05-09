@@ -303,3 +303,76 @@
       margin: 10px 0 10px 0;
     }
   }
+
+
+  /* newsletter */
+  /* NewsletterSignup.css */
+.newsletter-section {
+    padding: 3rem 0;
+    background-color: #fff;
+  }
+  
+
+  
+  .newsletter-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .btn-signup {
+    background-color: var(--theme-color-dark);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border: none;
+  }
+  
+  .btn-signup:hover {
+    background-color: var(--theme-color-dark);
+    color: white;
+  }
+  
+  .newsletter-divider {
+    margin-top: 3rem;
+    opacity: 0.2;
+  }
+  
+  /* Make sure the input and button have good height on mobile */
+  .input-group .form-control {
+    padding: 0.75rem 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    .newsletter-heading {
+      font-size: 2rem;
+    }
+    
+    .newsletter-text {
+      font-size: 1rem;
+    }
+  }
+
+
+  /* newsletter */
+
+  .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .form-control {
+    height: 50px;
+  }
+
+
+  .owl-theme .owl-nav [class*=owl-] {
+    margin: 5px 20px !important;
+  }

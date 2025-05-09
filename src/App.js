@@ -5,9 +5,10 @@ import Faqs from './Components/Faqs';
 import Footer from './Components/Footer';
 import LandingPage from './Components/LandingPage';
 import Navbar from './Components/Navbar';
-import SplitSection from './Components/SplitSection';
+// import SplitSection from './Components/SplitSection';
 import Testimonial from './Components/Testimonial';
 import VideoSection from './Components/VideoSection';
+import Newsletter from './Components/Newsletter';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <VideoSection/>
       <ChatUs/>
       <Faqs/>
+      <Newsletter/>
       <Footer />
     </div>
   );
