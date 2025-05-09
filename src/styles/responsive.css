@@ -78,6 +78,9 @@
     .image-1 {
       height: 300px;
   }
+  iframe {
+    width: 500px;
+  }
   }
   
   @media (max-width: 525px) {
@@ -111,6 +114,9 @@
   .cta-area {
     padding: 35px;
   }
+  iframe {
+    width: 300px;
+  }
 
   }
   
@@ -125,4 +131,9 @@
   .navbar-toggler {
     padding: 0;
   }
+
+  iframe {
+    width: 250px;
+  }
+
   }
