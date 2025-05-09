@@ -5,7 +5,7 @@ import imageThree from '../assets/image-3.png'
 
 function Cta() {
 return (
-    <section className="cta-section pb-5">
+    <section className="cta-section">
     <div class="container-fluid p-0">
         <div class="cta-area">
         <h2 className="theme-title">HOW WE MAKE DOGS HAPPY</h2>
@@ -71,7 +71,7 @@ return (
     </div>
   
     {/* Section 03 */}
-    <div className="container p-0">
+    <div className="container p-0 ">
       <div className="row align-items-center" style={{ backgroundColor: '#1a4e8a' }}>
         <div className="col-lg-6  order-1 p-lg-5 p-4">
           <div className="split-text-section">
@@ -86,14 +86,20 @@ return (
           </div>
         </div>
         <div className="col-lg-6 p-0 order-2">
-          <div className="split-text-section">
+          <div className="split-text-section ">
             <div className="image-1">
               <img className="obj_fit" src={imageThree} alt="" />
             </div>
           </div>
         </div>
       </div>
+      <div className="cta-area">
+      <button className="theme_btn mx-auto">Get BarkBox</button>
+      </div>
+
     </div>
+
+
   </section>
     </section>
 );
