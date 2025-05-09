@@ -1,14 +1,11 @@
-body {
-  font-family: 'Apercu', sans-serif;
-}
+
 
 :root {
     --theme-color-sky: #01aed8;
     --theme-color-dark: #1a4e8a;
     --primary-color: #6c757d;
-    --font-main: '';
-    --border-radius: 8px;
-    --navbar-height: 70px;
+    --font-title: 'Pancho W03 Semibold', sans-serif;
+    --font-theme: 'Work Sans', sans-serif;
   }
 
   .obj_fit {
@@ -16,10 +13,16 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  .theme-title {
+    font-family: var(--font-title);
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--theme-color-dark);
+  }
+  .p-20 {
+    font-size: 20px;
+  }
   
  
-  h1 {
-    font-family: 'Pancho', sans-serif;
-  }
-
 

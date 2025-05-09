@@ -11,6 +11,7 @@ import './index.css';
 import './styles/variables.css';
 import './styles/main.css';
 import './styles/navbar.css';
+import './styles/responsive.css'
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 

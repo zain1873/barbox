@@ -9,7 +9,10 @@
   padding: 10px 40px !important;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   
 }
 .nav-main {
@@ -49,12 +52,21 @@
   color: var(--theme-color-dark) ;
 }
 
+.navbar-nav .theme_btn {
+  height: 36px;
+    line-height: 12px;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+}
 
 
 .theme_btn {
   height: 36px;
   line-height: 12px;
-  width: auto;
   text-align: center;
   white-space: nowrap;
   padding-right: 8px;
@@ -69,11 +81,32 @@
   font-weight: bold;
   font-family: "apercu-bold", sans-serif;
   transition: .2s;
+  border: none;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+  width: 340px;
+  height: 50px;
+  font-size: 16px;
 }
+
+.btn-mbl .theme_btn {
+  height: 36px;
+    line-height: 12px;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+}
+
 
 .theme_btn:hover {
   color: #fff;
-  background-color: var(--theme-color-sky);
+  background-color: #000000;
 }
 
 
@@ -187,55 +220,4 @@
   font-size: 14px;
   margin: 15px 0 10px;
   font-weight: 600;
-}
-
-/* Responsive adjustments */
-@media (max-width: 991px) {
-  .navbar .navbar-nav {
-    display: none;
-  }
-  
-  .navbar-toggler {
-    display: block;
-  }
-  .nav-wrap {
-    display: flex;
-    justify-content: space-between;
-    gap: 2;
-    width: 50%;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-toggler {
-    display: none;
-  }
-  
-  .mobile-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 525px) {
-  .navbar {
-    padding: 10px 12px !important;
-  }
-  .nav-main {
-    padding: 0;
-  }
-}
-
-@media (max-width: 376px) {
-  .navbar-logo {
-    width: 100px;
-    height: auto;
-}
-.get-barkbox-btn {
-  padding: 8px 5px;
-}
-.navbar-toggler {
-  padding: 0;
-}
 }

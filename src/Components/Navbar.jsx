@@ -59,7 +59,9 @@ function Navbar() {
           <a href="/get-barkbox" className="mobile-menu-item d-md-none">Get BarkBox</a>
           <a href="/themes" className="mobile-menu-item">Monthly Themes</a>
           <a href="/gifts" className="mobile-menu-item">Gifts</a>
-          <a href="/help" className="mobile-menu-item">Get help <i className="ms-1 chat-icon"></i></a>
+          <a className="mobile-menu-item" href="/help">
+            Get help <i className="bi bi-chat-dots-fill chat-icon"></i>
+          </a>
           <a href="/login" className="mobile-menu-item">Login</a>
           <div className="mobile-menu-separator"></div>
           <h6 className="mobile-menu-subtitle">MORE FROM BARK</h6>
