@@ -11,7 +11,6 @@ function App() {
       <LandingPage/>
       <ContentContainer/>
       <Cta/>
-      <SplitSection/>
     </div>
   );
 }

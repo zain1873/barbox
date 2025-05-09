@@ -63,9 +63,9 @@ function Navbar() {
             Get help <i className="bi bi-chat-dots-fill chat-icon"></i>
           </a>
           <a href="/login" className="mobile-menu-item">Login</a>
-          <div className="mobile-menu-separator"></div>
+          {/* <div className="mobile-menu-separator"></div>
           <h6 className="mobile-menu-subtitle">MORE FROM BARK</h6>
-          <a href="/barkbox" className="mobile-menu-item">BarkBox</a>
+          <a href="/barkbox" className="mobile-menu-item">BarkBox</a> */}
         </div>
       </div>
     </div>
