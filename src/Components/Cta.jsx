@@ -19,7 +19,7 @@ return (
 
     <section className="split-section-container">
     {/* Section 01 */}
-    <div className="container p-0">
+    <div className="container-fluid p-0">
       <div className="row align-items-center" style={{ backgroundColor: '#1a4e8a' }}>
         <div className="col-lg-6  order-1 p-lg-5 p-4">
           <div className="split-text-section">
@@ -44,7 +44,7 @@ return (
     </div>
   
     {/* Section 02 - ALTERNATES on LG+ */}
-    <div className="container p-0">
+    <div className="container-fluid p-0">
       <div className="row align-items-center" style={{ backgroundColor: '#1a4e8a' }}>
         {/* Image First on lg+, Second on mobile */}
         <div className="col-lg-6 p-0 order-2 order-lg-1">
@@ -71,7 +71,7 @@ return (
     </div>
   
     {/* Section 03 */}
-    <div className="container p-0 ">
+    <div className="container-fluid p-0 ">
       <div className="row align-items-center" style={{ backgroundColor: '#1a4e8a' }}>
         <div className="col-lg-6  order-1 p-lg-5 p-4">
           <div className="split-text-section">
