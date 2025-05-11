@@ -39,7 +39,7 @@ function Navbar() {
                 <a className="nav-link" href="/themes">Monthly Themes</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/login">Login</a>
+                <a className="nav-link" href="/Dashboard">Login</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link theme_btn" href="/get-barkbox">GET BARKBOX</a>
@@ -62,7 +62,7 @@ function Navbar() {
           <a className="mobile-menu-item" href="/help">
             Get help <i className="bi bi-chat-dots-fill chat-icon"></i>
           </a>
-          <a href="/login" className="mobile-menu-item">Login</a>
+          <a href="/Dashboard" className="mobile-menu-item">Login</a>
           {/* <div className="mobile-menu-separator"></div>
           <h6 className="mobile-menu-subtitle">MORE FROM BARK</h6>
           <a href="/barkbox" className="mobile-menu-item">BarkBox</a> */}

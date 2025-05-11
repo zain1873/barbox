@@ -1,0 +1,143 @@
+/* Dashboard.css */
+
+/* Main container styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  justify-content: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #f1f2f6;
+  padding: 20px 0;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
+  margin-top: 64px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.sidebar-item:hover {
+  background-color: #e6e7eb;
+}
+
+.sidebar-item.active {
+  background-color: var(--theme-color-dark);
+  color: #ffff;
+  border-left: 3px solid #fff;
+}
+
+.sidebar-icon {
+  margin-right: 12px;
+  stroke-width: 1.5;
+}
+
+/* Content area styles */
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  margin-top: 64px;
+}
+
+.welcome-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid #e9ecef;
+}
+
+.welcome-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #212529;
+}
+
+.welcome-header p {
+  margin: 5px 0 15px 0;
+  color: #495057;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.logout-icon {
+  margin-right: 5px;
+  stroke-width: 1.5;
+  font-size: 16px;
+}
+
+/* Tab content styles */
+.tab-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tab-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #212529;
+  font-size: 24px;
+}
+
+/* Order history items */
+.order-item {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Address items */
+.address-item {
+  border: 1px solid #e9ecef;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.address-item h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #495057;
+}
+
+.address-item p {
+  margin: 5px 0;
+  color: #6c757d;
+}
+
+
+/* Responsive layout: stack items vertically on small screens */
+@media (max-width: 650px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
