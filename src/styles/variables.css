@@ -4,7 +4,8 @@
     --theme-color-sky: #01aed8;
     --theme-color-dark: #1a4e8a;
     --primary-color: #6c757d;
-    --font-title: 'Pancho W03 Semibold', sans-serif;
+    /* --theme-title: 'Baloo 2', sans-serif; */
+    --theme-title: "Pancho W03 Semibold";
     --font-theme: 'Work Sans', sans-serif;
   }
 
@@ -15,7 +16,7 @@
   }
 
   .theme-title {
-    font-family: var(--font-title);
+    font-family: var(--theme-title);
     font-size: 36px;
     font-weight: bold;
     color: var(--theme-color-dark);

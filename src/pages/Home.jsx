@@ -1,13 +1,13 @@
 import React from "react";
-import ChatUs from './ChatUs';
-import ContentContainer from './ContentSec';
-import Cta from './Cta';
-import Faqs from './Faqs';
-import Footer from './Footer';
-import Navbar from './Navbar';
-import Testimonial from './Testimonial';
-import VideoSection from './VideoSection';
-import Newsletter from './Newsletter';
+import ChatUs from '../Components/ChatUs';
+import ContentContainer from '../Components/ContentSec';
+import Cta from '../Components/Cta';
+import Faqs from '../Components/Faqs';
+import Footer from '../Components/Footer';
+import Navbar from '../Components/Navbar';
+import Testimonial from '../Components/Testimonial';
+import VideoSection from '../Components/VideoSection';
+import Newsletter from '../Components/Newsletter';
 
 function Landing() {
   return (
@@ -34,8 +34,8 @@ function Landing() {
       <Cta />
       <Testimonial />
       <VideoSection />
-      <ChatUs />
-      <Faqs />
+      <ChatUs/>
+      <Faqs/>
       <Newsletter />
       <Footer />
     </section>

@@ -3,8 +3,8 @@ import React from "react";
 function VideoSection() {
   return (
     <section className="cta-section">
-      <div class="container-fluid p-0">
-        <div class="cta-area">
+      <div className="container-fluid p-0">
+        <div className="cta-area">
           <h2 className="theme-title">THE LEADER IN DOG TOY SAFETY</h2>
           <p>
             Did you know there are no safety standards for dog toys? Don’t
@@ -14,17 +14,17 @@ function VideoSection() {
           </p>
           <button className="theme_btn">Get BarkBox</button>
 
-          {/*embedded youtube video */}
-          <div className=" mt-5">
+          {/* embedded YouTube video */}
+          <div className="mt-5">
             <iframe
               width=""
               height="500"
               src="https://www.youtube.com/embed/FZsEKt2zbw4?si=CchnyQe0PtPR5dqU"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
         </div>
