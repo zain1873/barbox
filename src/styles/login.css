@@ -5,6 +5,7 @@
   color: #6c757d;
   font-weight: 500;
   padding: 1rem;
+  margin: 0;
 }
 
 .login-tabs .nav-link.active {
@@ -44,4 +45,8 @@
 .login-logo img{
     height: 50px;
     width: auto;
+}
+
+.login-card-body .theme_btn {
+    margin: 0;
 }

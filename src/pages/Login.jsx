@@ -12,11 +12,11 @@ const AuthTabs = () => {
     <div className="container" >
       <div className="row justify-content-center align-items-center" style={{ height: '100vh' }}>
         <div className="col-lg-4">
-          <div className="login-card shadow p-3">
+          <div className="login-card shadow p-lg-3 p-1">
             {/* Logo */}
             <div className="text-center pt-4 pb-3">
-            <div className='login-logo'>
-            <img class="obj_fit" alt="" src={barkBoxLogo} />
+            <div className='login-logo '>
+            <img class="obj_fit shadow-sm" alt="" src={barkBoxLogo} />
             </div>
             </div>
             
@@ -41,7 +41,7 @@ const AuthTabs = () => {
             </ul>
             
             {/* Form */}
-            <div className="login-card-body p-4">
+            <div className="login-card-body p-lg-4 p-2">
               <div className="mb-3">
                 <div className="input-group mb-3">
                   <span className="input-group-text bg-light border-0" >
@@ -88,7 +88,7 @@ const AuthTabs = () => {
                 </a>
                   
                   <button className="btn theme_btn w-100 py-2 login-p">
-                    Log In without a password
+                    Log In
                   </button>
                 </>
               )}
