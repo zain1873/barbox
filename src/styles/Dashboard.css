@@ -140,4 +140,7 @@
   .sidebar {
     width: 100%;
   }
+  .content {
+    margin-top: 0;
+  }
 }
