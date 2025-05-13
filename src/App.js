@@ -4,7 +4,6 @@ import DashboardLayout from './Components/DashboardLayout';
 import Login from '../src/pages/Login';
 import ToySelector from './pages/ToySelector';
 import PlushToys from './pages/PlushToys';
-import DurableToys from "./pages/DurableToys"
 import DogIntroForm from "./pages/DogIntroForm"
 import DogSizeSelector from './pages/DogSizeSelector';
 import Breed from './pages/Breed';
@@ -23,7 +22,6 @@ function App() {
          <Route path="/dashboard" element={<DashboardLayout />} />
           <Route path='/toy-selector' element= {<ToySelector/>} />
           <Route path='/plush-toys' element= {<PlushToys/>} />
-          <Route path='/durable-toys' element= {<DurableToys/>} />
           <Route path='/identity-form' element= {<DogIntroForm/>} />
           <Route path='/dog-size-selector' element= {<DogSizeSelector/>} />
           <Route path='/dog-breed' element= {<Breed/>} />
