@@ -453,7 +453,7 @@
 /* dog intro form */
 .dog-identity-container {
   max-width: 400px;
-  margin: 50px auto;
+  margin: 50px 30px;
   text-align: center;
 }
 
@@ -507,7 +507,7 @@
 
 .dog-size-container {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 50px 30px;
   text-align: center;
 }
 
@@ -566,7 +566,7 @@
 /* dog breed */
 .dog-breed-container {
   max-width: 400px;
-  margin: 80px auto;
+  margin: 50px 30px;
   text-align: center;
 }
 
@@ -601,7 +601,7 @@
 /* birthday section */
 .adoption-date-container {
   max-width: 500px;
-  margin: 80px auto;
+  margin: 50px 30px;
   text-align: center;
 }
 
@@ -651,7 +651,7 @@
 /* allergies */
 .food-preference-container {
   max-width: 600px;
-  margin: 60px auto;
+  margin: 50px 30px;
   text-align: center;
   padding: 0 20px;
 }
@@ -711,7 +711,7 @@
 /* email sectio  setup */
 .email-step-container {
   max-width: 450px;
-  margin: 60px auto;
+  margin: 50px 30px;
   text-align: center;
   padding: 0 20px;
 }
@@ -780,7 +780,7 @@
 /* pricing plan */
 .subscription-container {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 50px 30px;
   text-align: center;
   padding: 0 20px;
 }
@@ -930,7 +930,7 @@
   display: flex;
   gap: 40px;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 40px 20px;
   padding: 20px;
   font-family: 'Arial', sans-serif;
 }
@@ -1028,6 +1028,3 @@ input[type="text"], input[type="email"] {
 
 
 /* sections */
-section {
-  padding: 0 30px;
-}
