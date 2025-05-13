@@ -42,7 +42,7 @@ function Navbar() {
                 <a className="nav-link" href="/login">Login</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link theme_btn" href="/get-barkbox">GET BARKBOX</a>
+                <a className="nav-link theme_btn" href="/toy-selector">GET BARKBOX</a>
               </li>
             </ul>
          
