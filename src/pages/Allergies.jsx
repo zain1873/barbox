@@ -58,7 +58,7 @@ function FoodPreferencesStep() {
         If kutti has other dietary needs, please chat with us after you checkout and we'll do our best to accommodate.
       </p>
 
-      <button className="continue-btn theme_btn" onClick={handleContinue}>
+      <button className="continue-btn theme_btn mx-auto" onClick={handleContinue}>
         CONTINUE
       </button>
     </div>

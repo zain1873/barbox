@@ -44,7 +44,7 @@ function CheckoutPage() {
 
   return (
     <div className="checkout-container">
-      <div className="checkout-left">
+      <div className="checkout-left col-lg-6">
         <h2 className='theme-title'>Checkout</h2>
         <form onSubmit={handleSubmit}>
           <input type="email" name="email" placeholder="Email" value={form.email} onChange={handleChange} required />
@@ -83,7 +83,7 @@ function CheckoutPage() {
         </form>
       </div>
 
-      <div className="checkout-right">
+      <div className="checkout-right col-lg-6">
         <div className="order-summary">
           <h4>Order Summary</h4>
           <div className="summary-item">

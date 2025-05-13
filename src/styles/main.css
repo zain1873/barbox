@@ -452,9 +452,10 @@
 
 /* dog intro form */
 .dog-identity-container {
-  max-width: 400px;
-  margin: 50px 30px;
-  text-align: center;
+ max-width: 450px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: auto;
 }
 
 .dog-name-input {
@@ -506,9 +507,10 @@
 /* dog size selector */
 
 .dog-size-container {
-  max-width: 600px;
-  margin: 50px 30px;
-  text-align: center;
+    max-width: 760px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: auto;
 }
 
 .size-options {
@@ -565,9 +567,10 @@
 
 /* dog breed */
 .dog-breed-container {
-  max-width: 400px;
-  margin: 50px 30px;
-  text-align: center;
+ max-width: 450px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: auto;
 }
 
 .dog-breed-input {
@@ -600,9 +603,10 @@
 
 /* birthday section */
 .adoption-date-container {
-  max-width: 500px;
-  margin: 50px 30px;
-  text-align: center;
+max-width: 550px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: auto;
 }
 
 .adoption-message {
@@ -650,10 +654,10 @@
 
 /* allergies */
 .food-preference-container {
-  max-width: 600px;
-  margin: 50px 30px;
-  text-align: center;
-  padding: 0 20px;
+max-width: 650px;
+    padding: 50px 30px !important;
+    text-align: center;
+    margin: auto;
 }
 
 .description {
@@ -710,10 +714,10 @@
 
 /* email sectio  setup */
 .email-step-container {
-  max-width: 450px;
-  margin: 50px 30px;
-  text-align: center;
-  padding: 0 20px;
+    max-width: 550px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: auto;
 }
 
 .email-input {
@@ -778,11 +782,12 @@
 
 
 /* pricing plan */
-.subscription-container {
-  max-width: 800px;
-  margin: 50px 30px;
-  text-align: center;
-  padding: 0 20px;
+.subscription-container { 
+    max-width: 850px;
+    padding: 50px 30px;
+    text-align: center;
+    /* padding: 0 20px; */
+    margin: auto;
 }
 
 .billing-toggle {
@@ -929,8 +934,7 @@
 .checkout-container {
   display: flex;
   gap: 40px;
-  max-width: 1200px;
-  margin: 40px 10px;
+  margin: 40px 14px;
   padding: 16px;
   font-family: 'Arial', sans-serif;
 }
