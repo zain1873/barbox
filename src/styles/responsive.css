@@ -123,6 +123,12 @@
     .continue-btn {
     width: 250px;
   }
+  .checkout-container {
+    flex-direction: column;
+  }
+  .discount-box {
+    flex-direction: column;
+  }
   
 
   }

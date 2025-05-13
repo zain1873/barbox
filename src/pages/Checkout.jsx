@@ -45,7 +45,7 @@ function CheckoutPage() {
   return (
     <div className="checkout-container">
       <div className="checkout-left">
-        <h2>Checkout</h2>
+        <h2 className='theme-title'>Checkout</h2>
         <form onSubmit={handleSubmit}>
           <input type="email" name="email" placeholder="Email" value={form.email} onChange={handleChange} required />
 
