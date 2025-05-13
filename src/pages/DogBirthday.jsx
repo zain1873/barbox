@@ -25,7 +25,8 @@ function AdoptionDateStep() {
   };
 
   return (
-    <div className="adoption-date-container">
+    <section className='adoption-section'>
+      <div className="adoption-date-container">
         <h1 className='theme-title mb-4'>
             When is Dog's birthday?
         </h1>
@@ -50,6 +51,7 @@ function AdoptionDateStep() {
         CONTINUE
       </button>
     </div>
+    </section>
   );
 }
 

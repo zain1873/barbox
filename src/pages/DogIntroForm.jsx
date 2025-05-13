@@ -14,7 +14,8 @@ function DogIdentityStep() {
 
   return (
     <>
-      <div className="dog-identity-container">
+      <section className='identity-section'>
+        <div className="dog-identity-container">
         <input
           type="text"
           placeholder="Dog name"
@@ -46,6 +47,7 @@ function DogIdentityStep() {
           CONTINUE
         </button>
       </div>
+      </section>
     </>
   );
 }

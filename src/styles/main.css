@@ -1025,3 +1025,9 @@ input[type="text"], input[type="email"] {
   color: #777;
   margin-top: 20px;
 }
+
+
+/* sections */
+section {
+  padding: 0 30px;
+}

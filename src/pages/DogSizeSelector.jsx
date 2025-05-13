@@ -20,7 +20,8 @@ function DogSizeSelector() {
   };
 
   return (
-    <div className="dog-size-container">
+    <section className='dog-size-section'>
+      <div className="dog-size-container">
       <h2 className="theme-title">What size is your dog?</h2>
 
       <div className="size-options">
@@ -64,6 +65,7 @@ function DogSizeSelector() {
         CONTINUE
       </button>
     </div>
+    </section>
   );
 }
 

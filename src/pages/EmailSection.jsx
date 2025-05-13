@@ -17,7 +17,8 @@ function EmailStep() {
   };
 
   return (
-    <div className="email-step-container">
+   <section className='email'>
+     <div className="email-step-container">
         <h1 className='theme-title mb-4'>
             What is your email?
         </h1>
@@ -47,6 +48,7 @@ function EmailStep() {
         CONTINUE
       </button>
     </div>
+   </section>
   );
 }
 

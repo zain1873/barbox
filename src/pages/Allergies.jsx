@@ -25,7 +25,8 @@ function FoodPreferencesStep() {
   };
 
   return (
-    <div className="food-preference-container">
+   <section className='allergies'>
+     <div className="food-preference-container">
         <h1 className='theme-title'>
             Any allergies?
         </h1>
@@ -61,6 +62,7 @@ function FoodPreferencesStep() {
         CONTINUE
       </button>
     </div>
+   </section>
   );
 }
 

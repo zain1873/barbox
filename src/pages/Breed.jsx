@@ -16,7 +16,8 @@ function DogBreedStep() {
   };
 
   return (
-    <div className="dog-breed-container">
+    <section className='breed-section'>
+      <div className="dog-breed-container">
         <h1 className='theme-title mb-4'> What's breed of your Dog</h1>
       <input
         type="text"
@@ -34,6 +35,7 @@ function DogBreedStep() {
         CONTINUE
       </button>
     </div>
+    </section>
   );
 }
 

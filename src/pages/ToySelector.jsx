@@ -16,7 +16,8 @@ function ToySelector() {
   return (
     <>
 
-      <div className='like-toys'>
+      <section className='toys-section'>
+        <div className='like-toys'>
         <h1 className='theme-title'>What toys does your dog like best?</h1>
 
         <div className='toy-options'>
@@ -57,6 +58,7 @@ function ToySelector() {
             CONTINUE
             </button>
       </div>
+      </section>
     </>
   );
 }
