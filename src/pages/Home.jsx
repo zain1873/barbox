@@ -21,7 +21,9 @@ function Landing() {
               <div className="col-lg-4 banner-desc">
                 <div className="banner-text">
                   <h1>DOG JOY, DELIVERED EVERY MONTH</h1>
-                  <button className="theme_btn">Get BarkBox</button>
+                 <a href="/toy-selector">
+                   <button style={{textDecoration : 'none'}} className="theme_btn">Get BarkBox</button>
+                 </a>
                 </div>
               </div>
               <div className="col-lg-8"></div>
