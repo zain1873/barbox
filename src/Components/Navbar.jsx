@@ -48,7 +48,7 @@ function Navbar() {
          
           </div>
           <div className="btn-mbl d-lg-none d-md-block">
-                <a className="nav-link theme_btn" href="/get-barkbox">GET BARKBOX</a>
+                <a className="nav-link theme_btn" href="/toy-selector">GET BARKBOX</a>
           </div>
         </div>
       </nav>
