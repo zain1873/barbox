@@ -1,146 +1,237 @@
 import React, { useState } from 'react';
-import { User, Clock, MapPin, UserCircle, Clipboard, LogOut } from 'lucide-react';
-import '../styles/Dashboard.css';
-import { useNavigate } from 'react-router-dom';
-import Navbar from '../Components/Navbar';
+import "../styles/dashboard.css";
+import Boxes  from '../Components/Boxes'
+import DogProfile from '../Components/DogProfile';
+import VetChat from '../Components/VetChat';
+import Account from '../Components/Account';
 
-const Dashboard = () => {
-  const navigate = useNavigate(); 
-  const [activeTab, setActiveTab] = useState('my-account');
+import barkboxLogo from "../assets/barkbox-logo.svg"
+
+const BarkBoxDashboard = () => {
+  const [activeTab, setActiveTab] = useState('subscription');
 
   const renderTabContent = () => {
-    switch (activeTab) {
-      case 'my-account':
+    switch(activeTab) {
+      case 'subscription':
         return (
-          <div className="tab-content">
-            <h2 className="theme-title">My Account</h2>
-            <p>Email: Zain@gmail.com</p>
-            <p>Member since: January 15, 2025</p>
-            <p>Subscription: Premium</p>
-          </div>
-        );
-      case 'order-history':
-        return (
-          <div className="tab-content">
-            <h2 className="theme-title">Order History</h2>
-            <div className="order-item">
-              <p><strong>Order #12345</strong> - May 5, 2025</p>
-              <p>Total: $125.99</p>
-              <p>Status: Delivered</p>
+          <div className="row">
+            {/* Current Subscription */}
+            <div className="col-lg-6 mb-4">
+              <div className="card h-100 animate-left">
+                <div className="card-body">
+                  <div className="d-flex justify-content-between align-items-center mb-3">
+                    <h5 className="card-title mb-0">Current Subscription</h5>
+                    <span className="badge bg-success">Active</span>
+                  </div>
+                  
+                  <div className="subscription-details">
+                    <div className="detail-row">
+                      <span className="detail-label">Plan:</span>
+                      <span className="detail-value">6 Month Subscription</span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Price:</span>
+                      <span className="detail-value">$27/month</span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Next Billing:</span>
+                      <span className="detail-value">February 15, 2025</span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Dog Size:</span>
+                      <span className="detail-value">Medium (20-50 lbs)</span>
+                    </div>
+                  </div>
+
+                  <div className="subscription-actions mt-4">
+                    <button className="btn btn-outline-secondary btn-sm me-2">
+                      <i className="bi bi-pause-fill"></i> Pause Subscription
+                    </button>
+                    <button className="btn btn-outline-secondary btn-sm">
+                      <i className="bi bi-skip-forward-fill"></i> Skip Next Box
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="order-item">
-              <p><strong>Order #12290</strong> - April 18, 2025</p>
-              <p>Total: $67.50</p>
-              <p>Status: Delivered</p>
+
+            {/* Next Box Preview */}
+            <div className="col-lg-6 mb-4">
+              <div className="card h-100">
+                <div className="card-body animate-right">
+                  <h5 className="card-title mb-3">Next Box Preview</h5>
+                  <p className="text-muted mb-3">February 2025 - "Pawsome Adventures"</p>
+                  
+                  <div className="box-preview-image mb-3">
+                    <div className="preview-placeholder">
+                      <i className="bi bi-image" style={{fontSize: '3rem', color: '#ddd'}}></i>
+                    </div>
+                  </div>
+
+                  <div className="box-contents">
+                    <div className="content-item">
+                      <i className="bi bi-box text-primary"></i>
+                      <span>2 Adventure-themed toys</span>
+                    </div>
+                    <div className="content-item">
+                      <i className="bi bi-heart text-danger"></i>
+                      <span>2 All-natural treat bags</span>
+                    </div>
+                    <div className="content-item">
+                      <i className="bi bi-truck text-success"></i>
+                      <span>Ships February 10th</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         );
-      case 'addresses':
+      
+      case 'my-boxes':
         return (
-          <div className="tab-content">
-            <h2 className="theme-title">Addresses</h2>
-            <div className="address-item">
-              <h3 className="theme-title">Home Address</h3>
-              <p>123 Main Street</p>
-              <p>Apartment 4B</p>
-              <p>Lahore, Punjab</p>
-              <p>Pakistan</p>
-            </div>
-            <div className="address-item">
-              <h3 className="theme-title">Work Address</h3>
-              <p>456 Business Avenue</p>
-              <p>Suite 300</p>
-              <p>Lahore, Punjab</p>
-              <p>Pakistan</p>
-            </div>
-          </div>
+          <Boxes />
         );
-      case 'personal-profile':
+      
+      case 'dog-profile':
         return (
-          <div className="tab-content">
-            <h2 className="theme-title">Personal Profile</h2>
-            <p>Name: Zain Saleem</p>
-            <p>Phone: +92 300 1234567</p>
-            <p>Date of Birth: March 15, 1990</p>
-            <p>Preferred Language: English</p>
-          </div>
+          <DogProfile/>
         );
-      case 'manage-subscription':
+      
+      case 'vet-chat':
         return (
-          <div className="tab-content">
-            <h2 className="theme-title">Manage Subscription</h2>
-            <p>Current plan: Premium</p>
-            <p>Billing cycle: Monthly</p>
-            <p>Next billing date: June 10, 2025</p>
-            <p>Payment method: Visa ending in 4321</p>
-          </div>
+         <VetChat />
         );
+      
+      case 'account':
+        return (
+          <Account />
+        );
+      
       default:
-        return <div className="tab-content">Select a tab to view content</div>;
+        return null;
     }
   };
 
   return (
-  
-    <div className="dashboard-container">
-       
-
-      <div className="sidebar">
-        <div
-          className={`sidebar-item ${activeTab === 'my-account' ? 'active' : ''}`}
-          onClick={() => setActiveTab('my-account')}
-        >
-          <User className="sidebar-icon" />
-          <span>My Account</span>
-        </div>
-        <div
-          className={`sidebar-item ${activeTab === 'order-history' ? 'active' : ''}`}
-          onClick={() => setActiveTab('order-history')}
-        >
-          <Clock className="sidebar-icon" />
-          <span>Order History</span>
-        </div>
-        <div
-          className={`sidebar-item ${activeTab === 'addresses' ? 'active' : ''}`}
-          onClick={() => setActiveTab('addresses')}
-        >
-          <MapPin className="sidebar-icon" />
-          <span>Addresses</span>
-        </div>
-        <div
-          className={`sidebar-item ${activeTab === 'personal-profile' ? 'active' : ''}`}
-          onClick={() => setActiveTab('personal-profile')}
-        >
-          <UserCircle className="sidebar-icon" />
-          <span>Personal Profile</span>
-        </div>
-        <div
-          className={`sidebar-item ${activeTab === 'manage-subscription' ? 'active' : ''}`}
-          onClick={() => setActiveTab('manage-subscription')}
-        >
-          <Clipboard className="sidebar-icon" />
-          <span>Manage Subscription</span>
-        </div>
-        <div className="sidebar-item" onClick={() => navigate('/')}>
-          <LogOut className="sidebar-icon" />
-          <span>Log out</span>
-        </div>
-      </div>
-      <div className="content">
-        <div className="welcome-header">
-          <h1 className="theme-title">Hi, Zain Saleem</h1>
-          <p>Welcome to your account.</p>
-          <div className="logout-button">
-            <LogOut className="logout-icon" />
-            <span onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-              Log out
-            </span>
+    <div className="barkbox-dashboard">
+      {/* Header */}
+      <div className="dashboard-header">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col">
+              <div className="navbar-logo ">
+                <img className='obj_fit' src={barkboxLogo} alt="" />
+              </div>
+            </div>
+            <div className="col-auto">
+              <button className="btn btn-outline-secondary btn-sm">
+                <i className="bi bi-question-circle me-1"></i>
+                Get help
+              </button>
+            </div>
           </div>
         </div>
-        {renderTabContent()}
+      </div>
+
+      <div className="container py-4">
+        {/* Welcome Section */}
+        <div className="welcome-section mb-4">
+          <h1 className="theme-title ">Welcome back! 🐕</h1>
+          <p className="welcome-subtitle">Manage Buddy's subscription and see what's coming next</p>
+        </div>
+
+        {/* Stats Cards */}
+        <div className="row mb-4">
+          <div className="col-lg-3 col-md-6 mb-3">
+            <div className="stat-card animate-bottom">
+              <div className="stat-icon boxes">
+                <i className="bi bi-box icon-bounce "></i>
+              </div>
+              <div className="stat-number icon-bounce">12</div>
+              <div className="stat-label">Boxes Delivered</div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-3">
+            <div className="stat-card animate-bottom">
+              <div className="stat-icon toys">
+                <i className="bi bi-heart icon-bounce"></i>
+              </div>
+              <div className="stat-number icon-bounce">48</div>
+              <div className="stat-label">Toys Loved</div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-3">
+            <div className="stat-card animate-bottom">
+              <div className="stat-icon treats ">
+                <i className="bi bi-gift icon-bounce"></i>
+              </div>
+              <div className="stat-number icon-bounce">24</div>
+              <div className="stat-label">Treats Enjoyed</div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mb-3">
+            <div className="stat-card animate-bottom">
+              <div className="stat-icon delivery">
+                <i className="bi bi-calendar3 icon-bounce"></i>
+              </div>
+              <div className="stat-number icon-bounce">February 15, 2025</div>
+              <div className="stat-label">Next Delivery</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Tabs */}
+        <ul className="nav nav-tabs dashboard-tabs mb-4">
+          <li className="nav-item">
+            <button 
+              className={`nav-link ${activeTab === 'subscription' ? 'active' : ''}`}
+              onClick={() => setActiveTab('subscription')}
+            >
+              Subscription
+            </button>
+          </li>
+          <li className="nav-item">
+            <button 
+              className={`nav-link ${activeTab === 'my-boxes' ? 'active' : ''}`}
+              onClick={() => setActiveTab('my-boxes')}
+            >
+             My Boxes
+            </button>
+          </li>
+          <li className="nav-item">
+            <button 
+              className={`nav-link ${activeTab === 'dog-profile' ? 'active' : ''}`}
+              onClick={() => setActiveTab('dog-profile')}
+            >
+              Dog Profile
+            </button>
+          </li>
+          <li className="nav-item">
+            <button 
+              className={`nav-link ${activeTab === 'vet-chat' ? 'active' : ''}`}
+              onClick={() => setActiveTab('vet-chat')}
+            >
+              Vet Chat
+            </button>
+          </li>
+          <li className="nav-item">
+            <button 
+              className={`nav-link ${activeTab === 'account' ? 'active' : ''}`}
+              onClick={() => setActiveTab('account')}
+            >
+              Account
+            </button>
+          </li>
+        </ul>
+
+        {/* Tab Content */}
+        <div className="tab-content">
+          {renderTabContent()}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default BarkBoxDashboard;

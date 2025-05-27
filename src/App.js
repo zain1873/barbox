@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../src/pages/Home';
-import DashboardLayout from './Components/DashboardLayout';
+// import DashboardLayout from './Components/DashboardLayout';
 import Login from '../src/pages/Login';
 import ToySelector from './pages/ToySelector';
 import PlushToys from './pages/PlushToys';
@@ -12,6 +12,7 @@ import Allergies from './pages/Allergies'
 import EmailSection from './pages/EmailSection'
 import PricingPlan from './pages/PricingPlan'
 import Checkout from './pages/Checkout'
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/login" element={<Login/>}/>
-         <Route path="/dashboard" element={<DashboardLayout />} />
+         <Route path="/dashboard" element={<Dashboard />} />
           <Route path='/toy-selector' element= {<ToySelector/>} />
           <Route path='/plush-toys' element= {<PlushToys/>} />
           <Route path='/identity-form' element= {<DogIntroForm/>} />
