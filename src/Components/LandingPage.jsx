@@ -8,7 +8,6 @@ import Navbar from './Navbar';
 import Testimonial from './Testimonial';
 import VideoSection from './VideoSection';
 import Newsletter from './Newsletter';
-import '../styles/dashboard.css';
 
 function Landing() {
   return (
